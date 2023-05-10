@@ -1,7 +1,7 @@
 body {
-    background-color: pink;
+    background-color: rgb(250, 167, 201);
     text-align: center;
-    margin: auto;
+    margin: 25px auto;
     max-width: 400px;
 }
 header {
