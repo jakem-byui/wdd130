@@ -1,0 +1,42 @@
+img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+* {
+    border: 2px solid steelblue;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    text-align: right;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+main p {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+a {
+    font-size: 1.5em;
+}
+p {
+    width: 80%;
+}
