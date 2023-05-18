@@ -1,6 +1,15 @@
 header {
     text-align: center;
 }
-main {
+main.three-circles {
     text-align: center;
+}
+body {
+    max-width: 1600px;
+}
+section {
+    background-color: gray;
+}
+main.class {
+    max-width: 300px;
 }
