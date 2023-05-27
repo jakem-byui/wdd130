@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    margin: auto;
+    border: 3px black;
+    margin: 10em;
+}
+
+img {
+    max-width: 400px;
+}
+
+h2 {
+    background-color: gray;
+    color: crimson;
+    padding: 200px;
+
+}
