@@ -174,3 +174,15 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.homepage {
+  width: 500px;
+}
+
+.factions {
+  width: 500px;
+}
+
+.gameplay {
+  width: 500px;
+}
