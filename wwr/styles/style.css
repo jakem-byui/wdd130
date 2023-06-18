@@ -147,7 +147,7 @@ h4 {
     font-size: larger;
 
 }
-main, .home-grid {
+.home-grid {
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
@@ -201,6 +201,7 @@ main, .home-grid {
 .logo {
     width: 80px;
 }
+
 .icon {
     width: 80px;
     padding-top: 10px;
@@ -241,6 +242,68 @@ main, .home-grid {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* rivers.html */
+#biglogo {
+    width: 180px;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#page2topimg {
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 2/4;
+    grid-row: 1/8;
+}
+#page2msg {
+    background-color: #EF8354;
+    padding: 1em;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 4/6;
+    grid-row: 4/6;
+    text-align: center;
+    transition: transform .5s;
+}
+#page2msg:hover {
+
+    transform: scale(1.1);
+}
+
+.page2welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 2.5em;
+    
+}
+
+.page2content {
+    display: grid;
+    margin-top: 2.5em;
+
+}
+.salmon-card, .desolation-card, .grandcanyon-card {
+    background-color: #134266;
+    color: white;
+    margin: 0% 25px;
+    max-width: 20em;
+}
+.salmon-card {
+    padding: 1em;
+    grid-column: 2/4;
+}
+.desolation-card {
+    padding: 1em;
+    grid-column: 5/7;
+}
+.grandcanyon-card {
+    padding: 1em;
+    grid-column: 8/10;
+}
+.cardpic {
+    border: white solid 10px;
+    max-width: 15em;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
