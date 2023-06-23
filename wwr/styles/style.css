@@ -22,14 +22,12 @@
     --nav-background-color: #FCE172;
     --nav-hover-link-color: white;
     --nav-hover-background-color: #EF8354;
-  }
+}
 
 #content {
     max-width: 1600px;
     margin: 0 auto;
     z-index: -1;
-
-
 }
 #background {
     height: 500px;
