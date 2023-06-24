@@ -148,12 +148,13 @@ footer a {
     }
 
     .card-img {
-        border: 10px solid var(--accent2-color);
+        border: .25em solid var(--secondary-color);
         transition: transform .5s;
         box-shadow: 5px 5px 10px var(--primary-color);
         width: 100%;
         max-width: 300px;
         height: 200px;
+        border-radius: 100%;
         
     }
     .card-img:hover {
