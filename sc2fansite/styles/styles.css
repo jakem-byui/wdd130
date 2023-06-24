@@ -22,8 +22,8 @@
   --paragraph-background-color: #222A2C  ;
   --nav-link-color: #222A2C;
   --nav-background-color: #6C979C;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #222A2C;
+  --nav-hover-link-color: #222A2C;
+  --nav-hover-background-color: #46d45c;
 }
 
 body {
@@ -37,11 +37,7 @@ header {
     font-size: xx-large;
     display: grid;
     grid-template-columns: 150px auto;
-}
-
-footer {
-    position:fixed;
-    bottom: 0;
+    box-shadow: 5px 5px 10px var(--primary-color);
 }
 
 nav {
@@ -55,20 +51,25 @@ nav a {
     padding: 5rem;
 }
 nav a:hover {
-    background-color: #46d45c;
+    background-color: var(--nav-hover-background-color);
     opacity: 70%;
-    color: #222A2C;
+    color: var(--nav-hover-link-color);
 }
 
 div {
     background-image: url(https://jakem-byui.github.io/2023-Spring---WDD-130/sc2fansite/images/bg1.jpg);
 }
 
+.logo   {
+    max-width: 120px;
+    border-radius: 100%;
+}
+
 #logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
-    
+    max-width: 80px;
 }
 
 #content {
@@ -77,13 +78,87 @@ div {
     z-index: -1;
 }
 
-#dashboard {
-    background-image: url(https://jakem-byui.github.io/2023-Spring---WDD-130/sc2fansite/images/footer.png);
-    min-height: 200px;
-    min-width: 1600px;
+
+
+main    {
+    color: var(--paragraph-color-on-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+footer  {
+    color: var(--paragraph-color-on-color);
+    font-family: var(--paragraph-font);
+    background-color: #222A2C;
+    padding: 1em;
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: var(--accent1-color);
+    text-decoration: underline;
+}
+
+.footer-background {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 5em;
 }
 
 /* Homepage Styles */
+
+    .banner {
+        font-family: var(--heading-font);
+        color: var(--headline-color-on-color);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        max-width: 1200px;
+    }
+    #banner-picture {
+        max-width: 800px;
+        box-shadow: 5px 5px 10px var(--primary-color);
+    }
+
+    .index-main {
+        display: grid;
+    }
+
+    .retro-card, .sc2-card, .evolution-card {
+        margin: 4em 2em;
+        padding: 1em;
+        background-color: rgba(108, 151, 156, .5);
+        border-radius: 5%;
+    }
+    .retro-card {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .sc2-card {
+        grid-column: 5/7;
+        grid-row: 2/3;
+    }
+    .evolution-card {
+        grid-column: 8/10;
+        grid-row: 2/3;
+    }
+
+    .card-img {
+        border: 10px solid var(--accent2-color);
+        transition: transform .5s;
+        box-shadow: 5px 5px 10px var(--primary-color);
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+        
+    }
+    .card-img:hover {
+        transform: scale(1.1);
+    }
 
 /* Factions Styles */
 
