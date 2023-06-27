@@ -228,17 +228,18 @@ footer a {
     margin: 4em 2em;
     padding: 1em;
     background-color: rgba(108, 151, 156, .5);
-    border-radius: 5%;
+    border-radius: 25px;
     display: grid;
 }
 
 .l-gameplay-content-header {
-    padding: 1em;
     grid-column: 3/6;
     grid-row: 1/2;
+    font-size: 3em;
+    font-family: var(--heading-font);
 }
 .l-gameplay-content {
-    padding: 1em;
+    padding: 2em;
     grid-column: 3/6;
     grid-row: 2/5;
 }
@@ -250,7 +251,7 @@ footer a {
     width: 100%;
     max-width: 500px;
     height: 300px;
-    border-radius: 10%;
+    border-radius: 25px;
     grid-column: 1/3;
     grid-row: 1/5;
     
@@ -259,12 +260,13 @@ footer a {
     transform: scale(1.1);
 }
 .r-gameplay-content-header {
-    padding: 1em;
     grid-column: 1/4;
     grid-row: 1/2;
+    font-size: 3em;
+    font-family: var(--heading-font);
 }
 .r-gameplay-content {
-    padding: 1em;
+    padding: 2em;
     grid-column: 1/4;
     grid-row: 2/5;
 }
@@ -276,7 +278,7 @@ footer a {
     width: 100%;
     max-width: 500px;
     height: 300px;
-    border-radius: 10%;
+    border-radius: 25px;
     grid-column: 4/6;
     grid-row: 1/5;
     
