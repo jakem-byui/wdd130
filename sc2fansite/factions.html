@@ -36,7 +36,7 @@
         <main class="faction-main">
             
             <section class="protoss-card">
-                <img class="faction-card-img" src="images/protoss-base.jpg" alt="Protoss Base">
+                <img id="protoss-card-img" src="images/protoss-base.jpg" alt="Protoss Base">
                 <h1>Protoss</h1>
                 <p>Lastly, the Protoss are an ancient and advanced alien race. 
                     They possess incredible psionic abilities and wield highly 
@@ -46,7 +46,7 @@
                     any threats.</p>
             </section>
             <section class="terran-card">
-                <img class="faction-card-img" src="images/terran-base.jpg" alt="Terran Base">
+                <img id="terran-card-img" src="images/terran-base.jpg" alt="Terran Base">
                 <h1>Terran</h1>
                 <p>The Terrans are the human faction, characterized by their 
                     resourcefulness and adaptability. They rely on advanced 
@@ -56,7 +56,7 @@
                     oppressive forces.</p>
             </section>
             <section class="zerg-card">
-                <img class="faction-card-img" src="images/zerg-base.jpg" alt="Zerg Base">
+                <img id="zerg-card-img" src="images/zerg-base.jpg" alt="Zerg Base">
                 <h1>Zerg</h1>
                 <p>The Zerg, on the other hand, are a hive-minded species of 
                     relentless insectoids. They excel in overwhelming their 
@@ -66,6 +66,80 @@
                     Ghost but later became the fearsome Queen of Blades.</p>
             </section>
         </main>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("protoss-card-img");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("terran-card-img");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("zerg-card-img");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        </script>
 
         <footer>
             <p>Jake Matheson - StarCraft Fansite</p>
