@@ -141,12 +141,15 @@ footer a {
         box-shadow: 5px 5px 10px var(--primary-color);
         grid-column: 2/3;
         grid-row: 1/4;
-        
+
     }
     #banner-h1 {
         grid-column: 2/3;
         grid-row: 1/2;
         font-size: 44pt;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
     .banner-text {
         grid-column: 2/3;
