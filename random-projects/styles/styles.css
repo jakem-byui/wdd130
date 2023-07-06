@@ -1,0 +1,66 @@
+body {
+    background-image: url(https://images.pexels.com/photos/2387877/pexels-photo-2387877.jpeg);
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(70, 70, 70, .8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32pt;
+    outline: crimson 1px solid;
+    text-align: center;
+}
+
+nav, a {
+
+    outline: blue 3px solid;
+    
+}
+
+nav {
+    margin-left: auto;
+    width: auto; 
+    justify-content: space-around;
+    
+} 
+
+nav a {
+    color: mintcream;
+    padding: .25em;    
+
+}
+
+nav a:hover {
+    background-color: rgba(100, 100, 100, .8);    
+}
+
+
+main {
+    height: 1200px;
+    width: 100%;
+    background-color: rgba(100, 100, 100, .8);
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(70, 70, 70, .8);
+}
+
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nav-logo {
+    max-height: 100%;
+    max-width: 120px;
+}
+
+#universe-logo {
+    margin-right: auto;
+}

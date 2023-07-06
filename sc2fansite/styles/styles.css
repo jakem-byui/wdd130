@@ -126,10 +126,27 @@ footer a {
         margin-right: auto;
         margin-top: 1em;
         max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     #banner-picture {
         max-width: 800px;
         box-shadow: 5px 5px 10px var(--primary-color);
+        grid-column: 2/3;
+        grid-row: 1/4;
+        
+    }
+    #banner-h1 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 44pt;
+    }
+    .banner-text {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding: 1em;
+        background-color: rgba(34, 42, 44, .75);
     }
 
     .index-main {
@@ -258,6 +275,10 @@ footer a {
     font-size: large;
 }
 
+.card-h1 {
+    font-family: var(--heading-font);
+    font-size: 20pt;
+}
 
 
 /* The Modal (background) */
@@ -296,6 +317,7 @@ footer a {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+    font-family: var(--heading-font);
 }
   
 /* Add Animation */
