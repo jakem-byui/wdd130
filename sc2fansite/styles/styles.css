@@ -33,16 +33,18 @@
 
 body {
     background-image: url(https://jakem-byui.github.io/2023-Spring---WDD-130/sc2fansite/images/bg2.jpg);
+    
 }
 
 
 header {
     background-image: url(https://jakem-byui.github.io/2023-Spring---WDD-130/sc2fansite/images/bg2.jpg);
+    background-size: cover;
     font-family: var(--heading-font);
-    font-size: xx-large;
+    font-size: 24pt;
     display: grid;
-    grid-template-columns: 150px auto;
-    margin-top: -1em;
+    grid-template-columns: auto auto;
+
 }
 
 nav {
@@ -53,12 +55,16 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 5rem;
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1em;
 }
 nav a:hover {
     background-color: var(--nav-hover-background-color);
     opacity: 70%;
     color: var(--nav-hover-link-color);
+    text-decoration: underline;
 }
 
 .logo   {
@@ -139,7 +145,7 @@ footer a {
     }
     #banner-h1 {
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 1/2;
         font-size: 44pt;
     }
     .banner-text {
