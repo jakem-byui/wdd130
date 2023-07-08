@@ -1,5 +1,5 @@
 
-/* General Styles */
+/* ---------------------- General Styles ---------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Roboto&display=swap');
 
@@ -122,7 +122,7 @@ footer a {
     height: 5em;
 }
 
-/* Homepage Styles */
+/* ---------------------- Homepage Styles ---------------------- */
 
     .banner {
         font-family: var(--heading-font);
@@ -156,10 +156,18 @@ footer a {
         grid-row: 3/4;
         padding: 1em;
         background-color: rgba(34, 42, 44, .75);
+        line-height: 1.5;
     }
 
     .index-main {
         display: grid;
+    }
+
+    .index-main p {
+        line-height: 1.5;
+        text-align: justify;
+        text-indent: 5ch;
+        padding: 15px;
     }
 
     .retro-card, .sc2-card, .evolution-card {
@@ -195,7 +203,7 @@ footer a {
         transform: scale(1.1);
     }
 
-/* Factions Styles */
+/* ---------------------- Factions Styles ---------------------- */
 
 .faction-main {
     display: grid;
@@ -206,7 +214,16 @@ footer a {
     padding: 1em;
     background-color: rgba(108, 151, 156, .5);
     border-radius: 5%;
+    
 }
+
+.faction-main p {
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 5ch;
+    padding: 15px;
+}
+
 .terran-card {
     grid-column: 2/4;
     grid-row: 2/3;
@@ -282,6 +299,18 @@ footer a {
     margin-right: auto;
     text-align: center;
     font-size: large;
+    line-height: 1.5;
+}
+
+.faction-summary p {
+    max-width: 60ch;
+    margin: auto;
+    padding: 5px;
+}
+.faction-summary h2{
+    max-width: 40ch;
+    margin: auto;
+    padding: 10px;
 }
 
 .card-h1 {
@@ -367,7 +396,7 @@ footer a {
     cursor: pointer;
 }
 
-/* Gameplay Styles */
+/* ---------------------- Gameplay Styles ---------------------- */
 
 
 .resources-card, .bases-card, .battles-card {
@@ -378,19 +407,42 @@ footer a {
     display: grid;
 }
 
-.l-gameplay-content-header {
-    grid-column: 3/6;
-    grid-row: 1/2;
-    font-size: 3em;
-    font-family: var(--heading-font);
+
+.l-gameplay-content, .r-gameplay-content {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 5ch;
 }
 .l-gameplay-content {
-    padding: 2em;
     grid-column: 3/6;
     grid-row: 2/5;
 }
+.r-gameplay-content {
+    grid-column: 1/4;
+    grid-row: 2/5;
+}
 
-.l-gameplay-card-img {
+
+.l-gameplay-content-header, .r-gameplay-content-header {
+    font-size: 36pt;
+    font-family: var(--heading-font);
+    margin: auto;
+    padding: 0.3em;
+    text-decoration: underline;
+}
+.l-gameplay-content-header {
+    grid-column: 3/6;
+    grid-row: 1/2;
+}
+.r-gameplay-content-header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.l-gameplay-card-img, .r-gameplay-card-img {
     border: .25em solid var(--secondary-color);
     transition: transform .5s;
     box-shadow: 5px 5px 10px var(--primary-color);
@@ -400,48 +452,18 @@ footer a {
     border-radius: 25px;
     grid-column: 1/3;
     grid-row: 1/5;
-    
+    margin: auto;
 }
-.l-gameplay-card-img:hover {
-    transform: scale(1.1);
+.l-gameplay-card-img {
+    grid-column: 1/3;
+    grid-row: 1/5;
 }
-.r-gameplay-content-header {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-size: 3em;
-    font-family: var(--heading-font);
-}
-.r-gameplay-content {
-    padding: 2em;
-    grid-column: 1/4;
-    grid-row: 2/5;
-}
-
 .r-gameplay-card-img {
-    border: .25em solid var(--secondary-color);
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px var(--primary-color);
-    width: 100%;
-    max-width: 500px;
-    height: 300px;
-    border-radius: 25px;
     grid-column: 4/6;
     grid-row: 1/5;
-    
 }
-.r-gameplay-card-img:hover {
+.l-gameplay-card-img:hover, .r-gameplay-card-img:hover {
     transform: scale(1.1);
 }
 
-.gameplay-summary {
-    font-family: var(--heading-font);
-    color: var(--paragraph-color-on-color);
-    background-color: rgba(34, 42, 44, .75);
-    padding: 1em;
-    margin: 1em;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: large;
-}
+
